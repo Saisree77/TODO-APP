@@ -1,4 +1,4 @@
-#** TODO APPLICATION **#
+## TODO APPLICATION ##
 Spring Boot (Backend) + React (Frontend)
 A simple full-stack Todo application built as part of a screening assignment.
 
@@ -19,9 +19,40 @@ A simple full-stack Todo application built as part of a screening assignment.
 -Functional components + Hooks
 Hooks
 
-📂 Project Structure
-backend/   → Spring Boot API
-frontend/  → React UI
+# Project Architecture
+todo-app/
+│
+├── backend/   → Spring Boot API
+└── frontend/  → React Application
+📂 Backend Structure
+backend/
+└── src/main/java/com/example/todo
+    ├── controller
+    ├── service
+    ├── repository
+    ├── model
+    └── exception
+ 📁 Frontend Folder Structure (React)
+frontend/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── TodoForm.jsx
+│   │   ├── TodoList.jsx
+│   │   ├── TodoItem.jsx
+│   │   └── EditTodo.jsx
+│   │
+│   ├── services/
+│   │   └── api.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+└── vite.config.js  
 
 ⚙️ How to Run the Project
 # Step 1️⃣ – Run Backend
@@ -48,6 +79,14 @@ http://localhost:5173
 -JPA + H2 / PostgreSQL
 -React (Hooks)
 -Axios / Fetch
+# Evaluation Highlights
+-This project demonstrates:
+-REST API design principles
+-Clean layered backend architecture
+-React Hooks usage
+-API integration
+-Basic validation
+-End-to-end functionality
 
 # Conclusion #
 This application represents a structured, clean, and 
